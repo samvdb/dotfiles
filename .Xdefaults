@@ -17,7 +17,7 @@ Xcursor.theme                : Vanilla-DMZ-AA
 URxvt.font                   : xft:Terminus:pixelsize=14
 URxvt.boldFont               : xft:Terminus:pixelsize=14
 
-URxvt.perl-lib		     : /home/sam/dotfiles/urxvt-perls
+URxvt.perl-lib		     : ~/dotfiles/urxvt-perls
 URxvt.buffered               : true
 URxvt.perl-ext-common        : default,matcher
 URxvt.keysym.Shift-Control-C : perl:clipboard:copy
