@@ -1,0 +1,14 @@
+#echo $SSH_AUTH_SOCK >> ~/sam
+#eval gnome-keyring-daemon 
+#export GPG_AGENT_INFO SSH_AUTH_SOCK
+#export GNOME_KEYRING_SOCKET
+#export GNOME_KEYRING_PID
+nm-applet &
+xrandr --output LVDS-1 --primary --auto --left-of VGA-1
+xrdb -merge ~/.Xresources
+
+# Start GNOME Keyring
+eval $(gnome-keyring-daemon --start)
+export SSH_AUTH_SOCK
+export GNOME_KEYRING_PID
+export GNOME_KEYRING_CONTROL

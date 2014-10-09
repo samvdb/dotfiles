@@ -1,0 +1,25 @@
+#include "dotfiles/.colors/theme_twenty"
+
+!Xft.lcdfilter                : lcddefault
+!Xft.hintstyle                : hintslight
+!Xft.hinting                  : 1
+!Xft.autohint                 : 1
+Xft.antialias                : 1
+Xft.dpi                      : 96
+!Xft.rgba                     : rgb
+
+Xcursor.theme                : Vanilla-DMZ-AA
+
+*.charClass                  : 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48,58:48,63:48,61:48,44:48,38:48,59:48
+*.saveLines                  : 2048
+*.scrollBar                  : false
+
+URxvt.font                   : xft:Terminus:pixelsize=14
+URxvt.boldFont               : xft:Terminus:pixelsize=14
+
+URxvt.perl-lib		     : /home/sam/dotfiles/urxvt-perls
+URxvt.buffered               : true
+URxvt.perl-ext-common        : default,matcher
+URxvt.keysym.Shift-Control-C : perl:clipboard:copy
+URxvt.keysym.Shift-Control-V : perl:clipboard:paste
+URxvt.matcher.button         : 1
